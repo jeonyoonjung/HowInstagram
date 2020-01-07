@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!--메인이미지-->
+    <ImageView
+        android:layout_above="@+id/login_layout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_title">
+    </ImageView>
+    <!--메인이미지-->
+
+    <!--로그인레이아웃-->
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--이메일입력-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--이메일입력-->
+
+        <!--비밀번호입력-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--비밀번호입력-->
+
+        <!--이메일로그인버튼-->
+        <Button
+            android:id="@+id/email_login_button"
+            android:theme="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="56dp"
+            android:text="@string/signin_email">
+        </Button>
+        <!--이메일로그인버튼-->
+
+        <!--페이스북로그인버튼-->
+        <Button
+            android:id="@+id/facebook_sigin_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/signin_facebook"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_signin_facebook">
+        </Button>
+        <!--페이스북로그인버튼-->
+
+        <!--구글로그인버튼-->
+        <Button
+            android:id="@+id/google_sigin_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/signin_google"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_signin_google">
+        </Button>
+        <!--구글로그인버튼-->
+
+    </LinearLayout>
+
+</RelativeLayout>
